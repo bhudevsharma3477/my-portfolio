@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --light-bg-color: #323946;
+    --dark-bg-color: #1f242d;
+    --aqua-color: #0ef;
+}
+
+
+/*===========================================Header===========================================*/
+/*===========================================Header===========================================*/
+/*===========================================Header===========================================*/
+.header {
+    background-color: var(--dark-bg-color);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    border: 1px solid white;
+}
+
+.header ul {
+    margin-left: auto;
+}
+
+.header li {
+    margin-left: 20px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header a.navbar-brand {
+    font-weight: bold;
+}
+
+.header a.navbar-brand:hover {
+    color: white;
+}
+
+.header a.active,
+.header ul li a:hover {
+    color: var(--aqua-color);
+}
+
+.header i {
+    color: white;
+    cursor: pointer;
+}
+
+/*===========================================INTRO===========================================*/
+/*===========================================INTRO===========================================*/
+/*===========================================INTRO===========================================*/
+.intro {
+    color: white;
+    background-color: var(--dark-bg-color);
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.intro div.container {
+    height: 100%;
+    position: relative;
+}
+
+.intro div.row {
+    height: 100%;
+}
+
+.intro div.col-sm-6 {
+    height: 100%;
+}
+
+.intro div.inner_col {
+    height: 250px;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+.intro p {
+    font-size: 25px;
+}
+
+.intro p.para {
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+.intro p.span_p2 {
+    margin-top: -4px;
+}
+
+.intro h1 {
+    font-size: 40px;
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+.intro span {
+    color: var(--aqua-color);
+}
+
+.intro a {
+    background-color: #0ef;
+    border: none;
+    border-radius: 20px;
+    display: block;
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    padding: 13px 30px;
+    font-size: 12px;
+    box-shadow: 0 0 10px 1px #0ef;
+    transition-property: box-shadow;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    font-weight: bold;
+}
+
+.intro a:hover {
+    box-shadow: 0px 0px 0px 0px var(--aqua-color);
+}
+
+.intro img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px var(--aqua-color);
+}
+
+
+/*===========================================ABOUT===========================================*/
+/*===========================================ABOUT===========================================*/
+/*===========================================ABOUT===========================================*/
+.about {
+    background-color: var(--light-bg-color);
+    height: 100vh;
+    padding-top: 50px;
+    color: white;
+}
+
+.about .container {
+    height: 100%;
+}
+
+.about div.row {
+    height: 100%;
+}
+
+.about div.col-sm-6 {
+    height: 100%;
+}
+
+.about div.inner_col {
+    margin-top: 50%;
+    transform: translateY(-50%);
+    height: 250px;
+}
+
+.about h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about span {
+    color: var(--aqua-color);
+}
+
+.about .p1 {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.about .para {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.about p span {
+    color: white;
+    display: none;
+}
+
+.about button {
+    background-color: #0ef;
+    border: none;
+    border-radius: 20px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin-top: 15px;
+    color: black;
+    padding: 13px 30px;
+    font-size: 12px;
+    box-shadow: 0 0 10px 1px #0ef;
+    transition-property: box-shadow;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.about button:hover {
+    box-shadow: 0px 0px 0px 0px var(--aqua-color);
+}
+
+.about img {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px var(--aqua-color);
+}
+
+/*===========================================SKILLS===========================================*/
+/*===========================================SKILLS===========================================*/
+/*===========================================SKILLS===========================================*/
+.skills {
+    background-color: var(--dark-bg-color);
+    color: white;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.skills div.container {
+    height: 100%;
+}
+
+.skills h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.skills span {
+    color: var(--aqua-color);
+}
+.skills div.inner_col {
+    text-align: center;
+    background-color: var(--light-bg-color);
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px 0px;
+}
+.skills div.inner_col:hover {
+    border: 2px solid var(--aqua-color);
+}
+.skills i{
+    font-size: 50px;
+    color: var(--aqua-color);
+}
+.skills h4{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.skills p{
+    font-weight: bold;
+}
+/*==========FOOTER==========*/
+.footer {
+    background-color: var(--dark-bg-color);
+    color: white;
+}
+
+.footer .container {
+    padding: 10px 0px;
+    font-size: 13px;
+    border: 1px solid red;
+}
+.footer div.row{
+    margin: 0px auto;
+}
+.footer div.col-sm-6{
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+.footer p{
+    border: 1px solid red;
+    display: block;
+    height: 100%;
+}
+
+.footer span {
+    color: var(--aqua-color);
+}
+
+.footer a {
+    color: black;
+    background-color: var(--aqua-color);
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid red;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+/*=======================================CSS MEDIA QUERIES================================*/
+@media only screen and (max-width: 575px) {
+    .header li {
+        margin-left: 0px;
+    }
+
+    .header li a {
+        display: block;
+        padding: 10px 0px;
+    }
+}
