@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Intro from './components/Intro';
 import About from './components/About';
 import Skills from './components/Skills';
-import Portfolio from './components/Portfolio';
+import Projects from './components/Projects';
 import Footer from './components/Footer';
 
 
@@ -18,7 +18,7 @@ const App = () => {
       <Intro />
       <About />
       <Skills />
-      <Portfolio />
+      <Projects />
     </main>
     <Footer />
     
