@@ -8,8 +8,7 @@ const Projects = () => {
                 <h1>My <span>Projects</span></h1>
                 <div className="row">
                     {projects_data.map((value, index) => {
-                        return (
-                            <div key={index + 1} className="col-sm-4">
+                        return <div key={index + 1} className="col-sm-4">
                                 <div className="inner_col">
                                     <img src={value.background_image} alt="project_bg_image" />
                                     <div className="content">
@@ -19,7 +18,6 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                        )
                     })}
                 </div>
             </div>

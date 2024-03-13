@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ links, location }) => {
     return (
         <header className="header">
             <div className="container">
@@ -10,18 +10,11 @@ const Header = () => {
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
-                            <li>
-                                <a className="active" href="#intro">Home</a>
-                            </li>
-                            <li>
-                                <a  href="#about">About</a>
-                            </li>
-                            <li>
-                                <a  href="#skills">Skills</a>
-                            </li>
-                            <li>
-                                <a  href="#projects">Projects</a>
-                            </li>
+                            {links.map((value, index) => {
+                                return <li key={index + 1}>
+                                    <a className={location.hash === value.url ? "active" : ""} href={value.url}>{value.link_name}</a>
+                                </li>
+                            })}
                         </ul>
                     </div>
                 </nav>
